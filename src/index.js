@@ -29,7 +29,7 @@ exports.handler = async(event, context) => {
             body['message'] = 'No data available.';
             body['glossaryList'] = [];
         }
-        
+         body['cicd_status'] = 'Working Fine';
         await mclient.close();   
        
         
